@@ -1,0 +1,49 @@
+<!-- Default form login -->
+<section   class="back-image d-flex align-items-center justify-content-center " style="border: red;">
+  <div ></div>
+<form class="text-center  p-5 " style="margin: auto;">
+
+  <p class="h4 mb-4 color-letras">Sign in</p>
+  <div #id_spinner class="spinner-border ms-auto" role="status" aria-hidden="true"  style="visibility: hidden;"></div>
+  <!-- Email -->
+  <input type="email" id="defaultLoginFormEmail" class="form-control mb-4 " placeholder="E-mail">
+  <!-- Password -->
+  <input type="password" id="defaultLoginFormPassword"  class="form-control mb-4 " style="border-color: antiquewhite;" placeholder="Password">
+  <div class="d-flex justify-content-around">
+    <div>
+      <!-- Remember me -->
+      <mdb-checkbox [default]="true" style="background-color: coral;">Remember me</mdb-checkbox>
+    </div>
+    <div>
+      <!-- Forgot password -->
+      <a href="" class="color-letras" style="padding-left: 10px;">Forgot password?</a>
+    </div>
+  </div>
+  
+  <!-- Sign in button -->
+  <button mdbBtn  class="my-4" type="button" style="background-color:rgb(1, 75, 85); color: antiquewhite;"  (click)="getBienvenida()">Sign in</button>
+
+  <!-- Register -->
+  <p>Not a member?
+    <a href="" style="color:antiquewhite">Register</a>
+  </p>
+
+  <!-- Social login -->
+  <p>or sign in with:</p>
+
+  <a type="button" class=" mx-2" style="color: antiquewhite;">
+    <mdb-icon fab icon="facebook"></mdb-icon>
+  </a>
+  <a type="button" class=" mx-2" style="color: antiquewhite;">
+    <mdb-icon fab icon="twitter"></mdb-icon>
+  </a>
+  <a type="button" class=" mx-2" style="color: antiquewhite;">
+    <mdb-icon fab icon="linkedin"></mdb-icon>
+  </a>
+  <a type="button" class=" mx-2" style="color: antiquewhite;">
+    <mdb-icon fab icon="github"></mdb-icon>
+  </a>
+
+</form>
+</section>
+<!-- Default form login -->
